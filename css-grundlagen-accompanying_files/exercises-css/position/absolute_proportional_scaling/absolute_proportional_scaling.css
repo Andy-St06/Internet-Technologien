@@ -1,0 +1,12 @@
+body {
+    max-width: 1000px;
+    margin: 1rem auto;
+}
+
+.media-container {
+    border: 2px solid red; /* for visualisation only */
+}
+
+.media-container iframe {
+    border-style: none; /* remove default border from iframe */
+}

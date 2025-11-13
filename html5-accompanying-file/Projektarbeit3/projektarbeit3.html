@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projektarbeit-3</title>
+  </head>
+  <body>
+    <form action="#">
+      <ul>
+      <li><label for="anrede"><b>Anrede:</b> </label><br />
+      <select name="anrede">
+        <option>Frau</option>
+        <option>Herr</option>
+        <option>Firma</option>
+        </select><br /></li>
+      <li> <label for="name"><b> Name der Firma/Organisation:</b> </label><br />
+      <input name="name" type="text" /><br /></li>
+      <li> <label for="titel"><b> Titel:</b> </label><br />
+      <input name="titel" type="text" /><br /></li>
+      <li> <label for="vorname"><b> Vorname:*</b> </label><br />
+      <input name="vorname" type="text" required/><br /></li>
+      <li> <label for="nachname"><b> Nachname:*</b> </label><br />
+      <input name="nachname" type="text" required/><br /></li>
+      <li> <label for="email"><b> E-Mail-Adresse:*</b> </label><br />
+      <input name="email" type="email" required/><br /></li>
+      <li> <label for="stase"><b> Straße/Hausnummer:</b> </label><br />
+      <input name="stase" type="text" /><br /></li>
+      <li> <label for="plz"><b> PLZ/Ort:* </b> </label><br />
+      <input name="plz" type="text" required/><br /></li>
+      <li> <label for="land"><b> Land:*</b> </label><br />
+      <input name="land" type="text" required/><br /></li>
+      <li> <label for="tel"><b> Telefon:</b> </label><br />
+      <input name="tel" type="tel" /><br /></li>
+      <li> <label for="fax"><b> Fax:</b> </label><br />
+      <input name="fax" type="tel" /><br /></li>
+      <li> <label for="nachricht"><b> Ihre Nachricht:</b> </label><br />
+      <textarea for="nachricht"></textarea><br /></li>
+      <li> <label><b> Bitte senden Sie mir folgende Unterlagen zu:</b> <em>(Mehrfachauswahl möglich)</em></label><br />
+      <input name="unterlagen" type="checkbox"><label for="unterlagen">Katalog</label><br>
+      <input name="unterlagen" type="checkbox"><label for="unterlagen">Ryer</label><br>
+      <input name="unterlagen" type="checkbox"><label for="unterlagen">Demo-USB-Stick</label><br></li>
+      <li> <label><b>Wie haben Sie von unserem Shop erfahren? </b> <em>(keine Mehrfachauswahl möglich)</em></label><br />
+      <input name="shop" type="radio"><label for="shop">Suchmaschine</label><br>
+      <input name="shop" type="radio"><label for="shop">Anzeige</label><br>
+      <input name="shop" type="radio"><label for="shop">Artikel in Zeitung/Zeitschrift</label><br>
+      <input name="shop" type="radio"><label for="shop">persönliche Empfehlung</label><br>
+      <input name="shop" type="radio"><label for="shop">sonstiges, und zwar</label><br>
+      <textarea name="shop"></textarea><br></li>
+      <li> <input type="checkbox" name="newsletter" checked><label for="newsletter"><b>Bitte senden Sie mir den Newsletter zu</b><em>(Option ist standardmäßig aktiviert)</em></label><br>
+      
+      <li> <input name="su" type="submit">
+      <input name="re" type="reset">
+      </li></ul>
+    </form>
+  </body>
+</html>

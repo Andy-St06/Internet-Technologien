@@ -1,0 +1,25 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+.colored li::marker {
+    color: crimson;
+}
+
+ul.colored {
+    list-style-type: square;
+}
+
+ul.colored li::marker {
+    font-size: 1.2em;
+    line-height: 1;
+}
+
+.smiley li::marker {
+    content: "\1F642";
+}
+
+.smiley li {
+    padding-left: .5em;
+}

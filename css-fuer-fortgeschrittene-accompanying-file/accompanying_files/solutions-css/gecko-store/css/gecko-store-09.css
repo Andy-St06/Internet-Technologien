@@ -1,0 +1,380 @@
+/* fonts: */
+
+@font-face {
+    font-family: Raleway;
+    src: url(../fonts/raleway/raleway-regular.woff) format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(../fonts/raleway/raleway-italic.woff) format("woff");
+    font-style: italic;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(../fonts/raleway/raleway-bold.woff) format("woff");
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(../fonts/raleway/raleway-bold-italic.woff) format("woff");
+    font-style: italic;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Rokkitt;
+    src: url(../fonts/rokkitt/rokkitt-regular.woff) format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Rokkitt;
+    src: url(../fonts/rokkitt/rokkitt-bold.woff) format("woff");
+    font-style: normal;
+    font-weight: bold;
+}
+
+/* basics: */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    color: #333;
+    font-family: Raleway, Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    line-height: 1.6em;
+    background-color: #ded7d4;
+}
+
+/* display HTML5 elements as block level elements: */
+header, main, nav, aside, article, footer, figure, figcaption {
+    display: block;
+    padding: 0;
+}
+
+h1 {
+    font-family: Rokkitt, Georgia, Times, serif;
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+
+strong, b {
+    font-weight: bold;
+}
+
+em, i {
+    font-style: italic;
+}
+
+a {
+    color: #e53;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    margin-bottom: 1rem;
+    text-align: justify;
+    
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+
+ul {
+    margin-bottom: 1rem;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* header: */
+
+header {
+    font-family: Rokkitt, Georgia, Times, serif;
+    color: #fff;
+    background-color: rgba(33, 34, 37, 0.9);
+    
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    
+    z-index: 1; /* put the header in front of the banner */
+    display: flex;
+}
+
+header a {
+    color: inherit;
+}
+
+header a:hover {
+    text-decoration: none;
+}
+
+#logo {
+    text-align: center;
+    width: 11rem;
+    padding: 1rem;
+    border-right: 1px solid #666;
+}
+
+#logo a {
+    display: block;
+}
+
+#logo img {
+    width: 50%;
+}
+
+#logo figcaption {
+    font-size: 1.5rem;
+    white-space: nowrap;
+    letter-spacing: -0.03em;
+}
+
+#menu {
+    flex-grow: 1;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+#menu li {
+    padding: 0 1rem;
+}
+
+#menu nav:first-child {
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid #666;
+}
+
+#menu nav:first-child ul {
+    justify-content: flex-end;
+}
+
+#menu nav:last-child {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 1.5rem 0;
+}
+
+/* highlighted link in the main menu: */
+#menu a.sale {
+    background-color: #e53;
+    padding: .3em 1em;
+    border-radius: 2em;
+}
+
+/* banner: */
+
+#banner {
+    color: #fff;
+    height: 0;
+    box-sizing: content-box;
+    padding: 0 0 66% 0; /* aspect ratio 66% of the width of banner.jpg */
+    margin-bottom: 3rem;
+    background: url(../images/banner.jpg) no-repeat;
+    background-size: cover;
+    position: relative; /* because of the text div */
+}
+
+#banner div {
+    padding: 5.5vw 4vw;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+#banner h1 {
+    font-size: 7vw;
+    margin-bottom: .6em;
+}
+
+#banner p {
+    font-size: 4vw;
+    margin-bottom: 1.5em;
+}
+
+#banner a {
+    color: inherit;
+    font-size: 3vw;
+    text-decoration: none;
+    padding: .5em 2em;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 3px solid #fff;
+    border-radius: 1.5em;
+    transition: background-color .2s ease-out;
+}
+
+#banner a:hover {
+    background-color: rgba(238, 85, 51, 0.8);
+}
+
+/* content: */
+
+#content {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+aside,
+article {
+    background-color: #fff;
+    margin-bottom: 2rem;
+}
+
+article {
+    padding: 1.5rem 1.5rem 6rem 1.5rem;
+        /* padding-bottom creates space for the buttons */
+    position: relative; /* prerequisite for position:absolute of the buttons */
+}
+
+aside {
+    width: 24%;
+    float: right;
+    padding: 1.5rem;
+    
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10rem;
+}
+
+main {
+    width: 74%;
+    float: left;
+}
+
+figure img {
+    width: 100%;
+}
+
+article figure {
+    width: 30%;
+}
+
+article figcaption {
+    font-weight: bold;
+    text-align: center;
+}
+
+.product_image_left {
+    float: left;
+    margin-right: 1.5em;
+}
+
+.product_image_right {
+    float: right;
+    margin-left: 1.5em;
+}
+
+a.button_link {
+    color: #333;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    width: 10em;
+    border: 2px solid #333;
+    padding: .5em 1em;
+    border-radius: 6px;
+    transition: all .3s ease-out;
+    
+    position: absolute;
+    bottom: 1.5rem; /* same value as padding of the boxes */
+    right: 1.5rem;
+}
+
+a.button_link:hover {
+    color: #fff;
+    border-color: #e53;
+    background-color: #e53;
+}
+
+.options {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+ul.product_list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product_list li {
+    padding: 1rem;
+    /*flex-basis: 15rem;*/
+    width: 33.33%;
+}
+
+.product_list img {
+    display: block; /* remove gap between img and figcaption */
+}
+
+.product_list a {
+    display: block;
+    color: #fff;
+}
+
+.product_list a:hover {
+    text-decoration: none;
+}
+
+.product_list figcaption {
+    text-align: left;
+    padding: 1rem;
+    background-color: rgba(33, 34, 37, 0.9);
+}
+
+.product_list figcaption b {
+    display: block;
+    font-size: 1.3rem;
+}
+
+/* footer: */
+
+footer {
+    color: #fff;
+    text-align: center;
+    background-color: rgba(33, 34, 37, 0.9);
+    padding: 1.5rem;
+}
+
+footer a {
+    color: inherit;
+}
+
+footer a + a::before {
+    content: "|";
+    margin-left: .3em; /* there is already a space in HTML */
+    margin-right: .5em;
+}

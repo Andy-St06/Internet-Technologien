@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+#logo {
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover; /* prevent distortion of image */
+    border-radius: 50%; /* circle shape */
+}
+
+header {
+    background-color: rgba(0, 0, 0, .7);
+    width: 100%; /* full width */
+    height: 6rem;
+}

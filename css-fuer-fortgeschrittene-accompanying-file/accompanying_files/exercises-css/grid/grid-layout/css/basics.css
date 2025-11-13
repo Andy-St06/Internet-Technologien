@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    color: #333;
+    font-size: 1em;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+/* all grid items: */
+body > * {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.3em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+p:not(:last-child) {
+    margin-bottom: 1em;
+}

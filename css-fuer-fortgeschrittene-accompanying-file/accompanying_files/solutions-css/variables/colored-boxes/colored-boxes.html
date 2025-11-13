@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title></title>
+        <link rel="stylesheet" href="css/basics.css"/>
+        <link rel="stylesheet" href="css/colored-boxes.css"/>
+    </head>
+    
+    <body>
+        <h1>Proverbs of the World</h1>
+        
+        <div class="box-row">
+            <article class="box">
+                <h2>China</h2>
+                
+                <p>The snow goose need not bathe to make itself white. Neither need you do anything but be yourself.</p>
+            </article>
+            
+            <!-- method 1: change the value of the variable with inline styles: -->
+            <article class="box" style="--box-color: #2e82dc;">
+                <h2>Greece</h2>
+                
+                <p>A society grows great when old men plant trees whose shade they know they shall never sit in.</p>
+            </article>
+            
+            <article class="box" style="--box-color: #dc0a14;">
+                <h2>Japan</h2>
+                
+                <p>First the man takes a drink, then the drink takes a drink, then the drink takes the man.</p>
+            </article>
+            
+            <!-- method 2: change the value of the variable using classes: -->
+            <article class="box box-india">
+                <h2>India</h2>
+                
+                <p>We have no right to ask when a sorrow comes, ‘Why did this happen to me?’ unless we ask the same question for every joy that comes our way.</p>
+            </article>
+        </div>
+    </body>
+</html>

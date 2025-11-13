@@ -1,0 +1,38 @@
+html {
+    font-size: 100%;
+}
+
+body {
+    color: #333;
+    font-family: Helvetica, sans-serif;
+    font-size: 1em;
+    text-align: left;
+    background-color: #fff;
+}
+
+table {
+    width: 80%;
+    margin: 0 auto; /* center table within browser window */
+    border-collapse: collapse;
+        /* two adjacent borders are combined into one */
+}
+
+tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #ccc;
+}
+
+th, td {
+    border: 1px solid #333;
+    padding: 1em; /* inside spacing of the cells */
+}
+
+th {
+    color: #fff;
+    font-weight: bold;
+    background-color: #777;
+        /* this color covers the background-color of the tr's, as it is in front of it */
+}

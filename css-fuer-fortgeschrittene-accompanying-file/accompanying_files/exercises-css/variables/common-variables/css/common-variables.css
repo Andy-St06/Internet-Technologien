@@ -1,0 +1,105 @@
+:root {
+    --spacer: 1rem;
+    
+    --primary-color: #06c;
+    
+    --body-color: #333;
+    --body-bg: #eee;
+    --body-font-family: sans-serif;
+    --body-font-size: 1em;
+    --body-line-height: 1.5;
+    --body-max-width: 1200px;
+    
+    --headings-font-family: var(--body-font-family);
+    --headings-font-weight: normal;
+    --headings-font-style: normal;
+    
+    --nav-color: #fff;
+    --nav-bg: var(--primary-color);
+    --nav-gradient: linear-gradient(rgba(255, 255, 255, .3), rgba(255, 255, 255, 0));
+                    /* Creates a slight 3D effect. The background-color shines through the transparent gradient. */
+    --nav-opacity: .8; /* creates a slight hover effect */
+    --nav-margin: calc(var(--spacer) * 2);
+    
+    --main-bg: rgba(255, 255, 255, .9);
+    
+    --border-radius: 6px;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    color: var(--body-color);
+    font-size: var(--body-font-size);
+    font-family: var(--body-font-family);
+    line-height: var(--body-line-height);
+    background-color: var(--body-bg);
+    max-width: var(--body-max-width);
+    padding: var(--spacer);
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, p {
+    margin-bottom: var(--spacer);
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--headings-font-family);
+    font-weight: var(--headings-font-weight);
+    font-style: var(--headings-font-style);
+}
+
+a {
+    color: var(--primary-color);
+}
+
+nav {
+    color: var(--nav-color);
+    display: block;
+    margin-bottom: var(--nav-margin);
+    background-color: var(--nav-bg);
+    background-image: var(--nav-gradient);
+    border-radius: var(--border-radius);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    text-align: center;
+    flex-grow: 1;
+}
+
+nav li + li {
+    border-left: 1px solid rgba(255, 255, 255, .5);
+}
+
+nav a {
+    color: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    display: block;
+    padding: .75rem 1rem;
+    opacity: var(--nav-opacity);
+    transition: opacity .3s ease-out;
+}
+
+nav a:hover {
+    opacity: 1;
+}
+
+main {
+    padding: var(--spacer);
+    background-color: var(--main-bg);
+    border-radius: var(--border-radius);
+}

@@ -1,0 +1,30 @@
+.square {
+    width: 10rem;
+    height: 10rem;
+    background-color: #eee;
+    margin: 1rem;
+    float: left; /* place next to each other */
+}
+
+.first {
+    border: 2px solid crimson;
+}
+
+.second {
+    border-color: dodgerblue;
+    border-style: dashed double; /* 1. top/bottom, 2. left/right */
+    border-width: 5px 15px; /* 1. top/bottom, 2. left/right */
+}
+
+.third {
+    border-left: 20px dotted green;
+}
+
+.fourth {
+    border: 20px groove orange;
+}
+
+.fifth {
+    border-right: 10px solid gray;
+    border-bottom: 20px solid darkorchid;
+}

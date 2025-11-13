@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico" />            
+        <title>Get in touch!</title>
+        <link href="styles/styles.css" rel="stylesheet" type="text/css" media="screen" />
+    </head>
+    <body>      
+        <section>           
+            <div id="form_wrapper">
+                <div id="logo">
+                    <img src="img/bikelife-white.svg" alt="Logo" />
+                </div>
+                <form action="#">    
+                    <ul>
+                        <li>
+                            <input type="radio" name="salutation" id="salut_no" />
+                            <label for="salut_no">No</label>                            
+                            <input type="radio" name="salutation" id="salut_mr" />
+                            <label for="salut_mr">Mr</label>                            
+                            <input type="radio" name="salutation" id="salut_mrs" />
+                            <label for="salut_mrs">Mrs</label>                            
+                            <input type="radio" name="salutation" id="salut_ms" />
+                            <label for="salut_ms">Ms</label>
+                        </li>
+                        <li>
+                            <label for="first_name">
+                                <input type="text" name="first_name" id="first_name" placeholder="First Name*" required="required" />
+                            </label>                            
+                        </li>
+                        <li>
+                            <label for="last_name">
+                                <input type="text" name="last_name" id="last_name" placeholder="Last Name*" />
+                            </label>                            
+                        </li>
+                        <li>
+                            <label for="email">
+                                <input type="email" name="email" id="email" placeholder="eMail*" />
+                            </label>                            
+                        </li>
+                        <li>
+                            <label for="telephone">
+                                <input type="tel" name="telephone" id="telephone" placeholder="Telephone" />
+                            </label>                            
+                        </li>                                        
+                        <li>
+                            <label for="interest">
+                                <select name="interest" id="interest" required="required">
+                                    <option value="">I am interested in … *</option>
+                                    <option value="e">E-Bikes</option>
+                                    <option value="gravel">Gravelbikes</option>
+                                    <option value="trekking">Trekkingbikes</option>                                                                                                
+                                    <option value="etrekking">E-Trekkingbikes</option>                                                                                                                                
+                                    <option value="mtb">MTBs</option> 
+                                    <option value="emtb">E-MTBs</option>                                                                                                                                
+                                    <option value="children">Bikes for children</option> 
+                                    <option value="other">Others</option>                                                                                                                                                                                                
+                                </select>
+                            </label>
+                        </li>                       
+                        <li>
+                            <label for="message">
+                                <textarea name="message" id="message" placeholder="What can we do for you?"></textarea>
+                            </label>
+                        </li>                        
+                        <li>
+                            <input type="checkbox" name="newsletter" id="newsletter" />
+                            <label>Yes, I want to get your awesome newsletter, get access to great offers and want to learn more about your bikes!</label>                                                     
+                        </li>                        
+                        <li>
+                            <label for="sendbutton">
+                                <input type="submit" name="sendbutton" id="sendbutton" value="Send" />
+                            </label>
+                        </li>
+                        <li>* Required</li>  
+                    </ul>                    
+                </form>              
+            </div>            
+        </section>    
+    </body>
+</html>

@@ -1,0 +1,52 @@
+html {
+    font-size: 100%;
+}
+
+body {
+    color: #333;
+    font-size: 1em;
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #fff;
+    margin: 2em;
+}
+
+/* general formatting of all links: */
+a {
+    color: #06c;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Button-Link: */
+a.button_link {
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding: .7em;
+    background-color: #06c;
+    border-radius: 8px; /* rounded corners */
+    
+    display: block; /* treat link as a block-level element */
+    width: 10em; /* now we can add a width */
+    margin: 0 auto; /* center button within body */
+}
+
+ul {
+    list-style: none; /* remove bullet points */
+    padding: 0; /* remove default list indent */
+    margin: 1.5em 0; /* top and bottom */
+    
+    display: table; /* ul behaves like an HTML table tag */
+    width: 100%; /* full width of body */
+    border-collapse: collapse;
+        /* two adjacent borders are combined into one */
+}
+
+li {
+    text-align: center;
+    padding: .7em; /* inside spacing to the border */
+    border: 1px solid #333;
+    
+    display: table-cell; /* li's behave like HTML td tags */
+}

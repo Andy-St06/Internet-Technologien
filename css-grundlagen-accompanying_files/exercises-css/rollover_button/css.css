@@ -1,0 +1,28 @@
+a.button_link {
+  background: url(images/button.png) no-repeat;
+  width: 210px;
+  height: 45px;
+  display: block;
+  color: #a00000;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 1em;
+  color: black;
+  background-color: #fed792;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+a {
+  color: #f60;
+}
+
+a.hover {
+  text-decoration: underline;
+}

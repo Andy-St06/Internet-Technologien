@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+        /* don’t add padding to width and height */
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+/*a {
+    color: #07c;
+    text-decoration: none;
+}*/
+
+/* container */
+.address-book {
+    width: 25rem;
+    height: 35rem;
+    margin: 2rem auto;
+    border: 1px solid #ccc;
+    
+    resize: both;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* alphabetical block */
+.address-book dl {
+    font-weight: bold;
+    line-height: 2.25; /* create generous spacing */
+    padding: 0; /* just for safety */
+}
+
+/* headings */
+.address-book dt {
+    color: #fff;
+    font-size: 1.1em;
+    padding: 0 .75rem; /* padding-top is not required because of the line-height */
+    background-color: #b8c1c8;
+    border-bottom: 1px solid #989ea4;
+    
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+/* entries */
+.address-book dd {
+    font-size: 1.25rem;
+    padding: 0 .75rem; /* padding-top is not required because of the line-height */
+    white-space: nowrap; /* stay in one line */
+    border-bottom: 1px solid #ccc;
+}

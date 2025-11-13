@@ -1,0 +1,22 @@
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 1em;
+    background-color: #fff;
+}
+
+h1 {
+    font-family: serif;
+    font-size: 2rem;
+}
+
+.blog-post {
+    margin: 1.5rem;
+}
+
+.blog-post p:first-of-type {
+    font-weight: bold;
+}

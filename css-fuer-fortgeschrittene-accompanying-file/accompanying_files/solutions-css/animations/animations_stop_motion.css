@@ -1,0 +1,21 @@
+#hangman {
+    margin: 0 auto;
+    padding: 0;
+    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.3);
+    
+    width: 18.375rem; /* ≘ 294px frame width */
+    height: 30rem; /* ≘ 480px image height */
+    background: url(animation.jpg) no-repeat;
+    background-size: cover;
+    animation: walk 1s steps(8, end) infinite;
+}
+
+@keyframes walk {
+    from {
+        background-position: left top;
+    }
+
+    to {
+        background-position: right top;
+    }
+}

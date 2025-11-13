@@ -1,0 +1,96 @@
+.colored-icons {
+    display: flex;
+    /* put icons side by side */
+    
+    flex-wrap: wrap;
+    /* allow icons to wrap to a new line */
+}
+
+.colored-icon {
+    flex: 0 0 auto;
+    /* don't grow or shrink, but keep the specified width */
+    
+    margin: .5rem;
+    /* margin between icons */
+    
+    color: #cd598e;
+    /* text color is used to define the border and icon color */
+    
+    font-size: 10rem;
+    /* font size is used to globally set the size of the icon and its elements */
+    
+    width: 1em;
+    height: 1em;
+    /* width and height depend on the font-size */
+    
+    background-color: #fff;
+    /* make sure that the background-color is always white, regardless of the background-color of the body */
+    
+    border: .07em double currentcolor;
+    /* border-width depends on the font-size,
+       border-color always uses the currently set text color */
+    
+    border-radius: 50%;
+    /* circle shape */
+    
+    position: relative;
+    /* prerequisite for position: absolute */
+    
+    overflow: hidden;
+    /* prevent elements from protruding beyond the circle shape,
+       alternative: border-radius: inherit in .colored-icon::before */
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* vertically center the icon inside the figure element */
+}
+
+.colored-icon img {
+    flex: 0 0 auto;
+    /* prevent flex-item from growing and shrinking */
+    
+    width: 65%;
+    
+    display: block;
+    margin: 0 auto;
+    /* horizontally center the icon */
+}
+
+.colored-icon::before {
+    content: "";
+    /* 'dummy' element: empty string */
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* absolutely position the pseudo-element in front of the icon and cover it entirely */
+    
+    /* border-radius: inherit; */
+    /* alternative to overflow: hidden in .colored-icon */
+    
+    background-color: currentcolor;
+    /* uses the currently set text color */
+    
+    mix-blend-mode: screen;
+}
+
+/* modifyer classes for different colors: */
+
+.colored-icon.colored-icon-magenta {
+    color: #cd598e;
+}
+
+.colored-icon.colored-icon-blue {
+    color: #095fd1;
+}
+
+.colored-icon.colored-icon-yellow {
+    color: #ffc107;
+}
+
+.colored-icon.colored-icon-green {
+    color: #4ba8b7;
+}

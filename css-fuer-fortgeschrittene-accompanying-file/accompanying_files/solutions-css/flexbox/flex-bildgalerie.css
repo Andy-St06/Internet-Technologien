@@ -1,0 +1,41 @@
+.gallery {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.gallery figure {
+    color: #fff;
+    margin-bottom: 1.5rem;
+    height: 12rem;
+    background-color: #1f232a;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+}
+
+.gallery a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    flex: 0 0 40%;
+}
+
+.gallery img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery figcaption {
+    font-size: 1.5rem;
+    display: block;
+    padding: 1rem;
+    flex-grow: 1;
+    align-self: center;
+}
+
+.gallery figcaption small {
+    font-size: .7em;
+    display: block;
+}

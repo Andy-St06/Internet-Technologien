@@ -1,0 +1,58 @@
+:root {
+  --box-padding: 1.25rem;
+  --heading-offset: -1.8rem;
+  --ribbon-width: 1.375rem; /* width of ribbon_right.png (22px) */
+  --ribbon-height: 3.0625rem; /* height of PNGs (49px) */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+p:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.box {
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    
+    width: 70%;
+    margin: 0 auto;
+    padding: 0 var(--box-padding) var(--box-padding) var(--box-padding);
+}
+
+.box_heading {
+    color: #fff;
+    font-weight: normal;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+    
+    font-size: 1.5rem; /* should fit into the ribbon */
+    line-height: 1.5em; /* vertically center text inside the ribbon */
+    margin: 0 0 1rem var(--heading-offset); /* ribbon protrudes from the left border of the box */
+    padding-right: var(--ribbon-width);
+    background: url(../images/ribbon_right.png) no-repeat right top;
+    background-size: auto 100%;
+    
+    width: calc(100% + var(--box-padding) + var(--ribbon-width) - var(--heading-offset));
+}
+
+.box_heading span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+    display: block;
+    padding-left: calc(0px - var(--heading-offset));
+        /* compensate negative margin-left of .box_heading */
+    height: var(--ribbon-height);
+    
+    background: url(../images/ribbon_left.png) no-repeat;
+    background-size: auto 100%;
+}

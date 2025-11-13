@@ -1,0 +1,51 @@
+.colored-icons {
+    display: flex;
+    /* put icons side by side */
+    
+    flex-wrap: wrap;
+    /* allow icons to wrap to a new line */
+}
+
+.colored-icon {
+    flex: 0 0 auto;
+    /* don't grow or shrink, but keep the specified width */
+    
+    margin: .5rem;
+    /* margin between icons */
+    
+    color: #cd598e;
+    /* text color is used to define the border and icon color */
+    
+    font-size: 10rem;
+    /* font size is used to globally set the size of the icon and its elements */
+    
+    width: 1em;
+    height: 1em;
+    /* width and height depend on the font-size */
+    
+    background-color: #fff;
+    /* make sure that the background-color is always white, regardless of the background-color of the body */
+    
+    border: .07em double currentcolor;
+    /* border-width depends on the font-size,
+       border-color always uses the currently set text color */
+    
+    border-radius: 50%;
+    /* circle shape */
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* vertically center the icon inside the figure element */
+}
+
+.colored-icon img {
+    flex: 0 0 auto;
+    /* prevent flex-item from growing and shrinking */
+    
+    width: 65%;
+    
+    display: block;
+    margin: 0 auto;
+    /* horizontally center the icon */
+}

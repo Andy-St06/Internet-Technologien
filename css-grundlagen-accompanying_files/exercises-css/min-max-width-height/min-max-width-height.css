@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-size: 1em;
+    font-family: sans-serif;
+    line-height: 1.5;
+    background-color: #fff;
+    margin: 1rem;
+}
+
+.alert {
+    margin: 2rem 0; /* top and bottom */
+    padding: 1rem 1rem 1rem 6.5rem; /* padding-left: make room for the image */
+    border: 1px solid #f07959;
+    border-radius: 5px;
+    background: #f0d2ca url(boy.jpg) no-repeat .5rem .5rem;
+    background-size: 6rem auto; /* fixed width for the image */
+}

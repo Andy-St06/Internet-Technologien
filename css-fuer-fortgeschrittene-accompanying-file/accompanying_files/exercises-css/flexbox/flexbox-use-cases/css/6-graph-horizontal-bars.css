@@ -1,0 +1,41 @@
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    /*align-items: flex-start;*/ /* default value */
+    
+    max-width: 700px;
+    height: 20rem;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #dee2e6;
+    border-radius: 5px;
+}
+
+.flex-item {
+    height: 15%;
+}
+
+.flex-item:nth-child(1) {
+    width: 40%;
+    filter: hue-rotate(100deg);
+}
+
+.flex-item:nth-child(2) {
+    width: 50%;
+    filter: hue-rotate(270deg);
+}
+
+.flex-item:nth-child(3) {
+    width: 60%;
+    filter: hue-rotate(200deg) brightness(125%);
+}
+
+.flex-item:nth-child(4) {
+    width: 20%;
+}
+
+.flex-item:nth-child(5) {
+    width: 30%;
+    filter: hue-rotate(150deg);
+}

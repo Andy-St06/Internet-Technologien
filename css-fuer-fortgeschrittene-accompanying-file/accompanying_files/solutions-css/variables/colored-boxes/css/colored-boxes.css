@@ -1,0 +1,64 @@
+.box-row {
+    display: flex;
+}
+
+.box {
+    /* declare local variables for the box: */
+    --box-margin: .5rem;
+    --box-padding: 1rem;
+    --box-border-radius: 5px;
+    --box-color: #f90;
+    
+    padding: var(--box-padding);
+    border: 1px solid var(--box-color);
+    border-radius: var(--box-border-radius);
+    
+    background-color: color-mix(in srgb, var(--box-color) 10%, #fff);
+    /* box-color is lightened by mixing it with 90% white */
+}
+
+/* only when the boxes are put inside .box-row: */
+.box-row .box {
+    flex: 1 0 calc(25% - var(--box-margin) * 2);
+    /* each box has a width of 25% minus twice the margin (left + right) */
+    
+    margin: var(--box-margin);
+}
+
+.box h2 {
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: bold;
+    
+    margin: calc(var(--box-padding) * -1); /* = -1rem */
+    /* apply negative margins to compensate the box-padding */
+    
+    margin-bottom: .75rem;
+    padding: .5rem var(--box-padding);
+    background-color: var(--box-color);
+}
+
+.box p {
+    position: relative;
+    /* prerequisite for position: absolute */
+    
+    padding-left: 1.75rem;
+    /* space for the quotation mark */
+}
+
+/* put a quotation mark in front of each first paragraph: */
+.box h2 + p::before {
+    content: "\201C";
+    color: var(--box-color);
+    font-family: Georgia, serif;
+    font-size: 5em;
+    line-height: 1;
+    position: absolute;
+    left: -0.5rem;
+    top: -0.5rem;
+}
+
+/* method 2: change the value of the variable using classes: */
+.box.box-india {
+    --box-color: #198754;
+}

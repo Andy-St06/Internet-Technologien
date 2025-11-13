@@ -1,0 +1,16 @@
+.fish {
+    width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    
+    /* filter: hue-rotate(220deg); */
+    /* filter: grayscale(1) brightness(2); */
+    /* filter: saturate(0) brightness(2); */
+    
+    transition: filter 1s linear;
+}
+
+.fish:hover {
+    filter: hue-rotate(220deg);
+}

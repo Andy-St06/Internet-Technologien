@@ -1,0 +1,26 @@
+/* visual styling only: */
+
+.visible {
+    padding: 1rem;
+    min-height: 6rem;
+}
+
+/* flexbox: */
+
+.flex-container {
+    display: flex;
+}
+
+.flex-item {
+    flex-grow: 1;
+}
+
+.flex-item + .flex-item {
+    /* all elements except the first
+       have a margin-left to the previous element */
+    margin-left: 1rem;
+}
+
+.flex-grow-3 {
+    flex-grow: 3;
+}

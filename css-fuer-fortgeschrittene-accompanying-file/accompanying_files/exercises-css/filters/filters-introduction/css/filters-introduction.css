@@ -1,0 +1,43 @@
+@font-face {
+    font-family: Daniel;
+    src: url("../fonts/daniel.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Daniel;
+    src: url("../fonts/danielbd.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+
+blockquote, img {
+    display: block;
+    margin-bottom: 3rem;
+}
+
+blockquote {
+    font-family: Daniel;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 2em;
+    padding: .5em;
+    
+    border: 5px dashed #333;
+    border-radius: 0.5em;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+blockquote p:last-child {
+    text-align: right;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+}

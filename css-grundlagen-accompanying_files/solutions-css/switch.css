@@ -1,0 +1,58 @@
+/* hide checkbox: */
+#switchbox {
+    position: absolute;
+    visibility: hidden;
+}
+
+#switchbox + label,
+#switchbox + label::before {
+    display: block;
+    transition: all 0.4s cubic-bezier(0.54, 1.6, 0.5, 1);
+    /* see http://matthewlein.com/ceaser/ */
+}
+
+/* background: */
+#switchbox + label {
+    font-size: 3rem; /* adjust the size of the entire switch */
+    width: 3.75em; /* ≈ 60px */
+    height: 1.875em; /* ≈ 30px */
+    background: #ccccd2;
+    border-radius: 1em; /* ≈ half of the height */
+    position: relative;
+        /* due of absolute positioning of the contained elements */
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        /* no highlighting on mobile devices */
+}
+
+/* button: */
+#switchbox + label::before {
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 40%;
+    height: 80%;
+    border-radius: 50%;
+    background: #f5f5f9;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.07);
+}
+
+#switchbox:checked + label {
+    background: #64bd63;
+}
+
+#switchbox:checked + label::before {
+    left: 55%;
+}
+
+/* labelling: */
+#switchbox + label span {
+    font-size: .8em;
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 105%;
+    left: 0;
+    right: 0;
+}

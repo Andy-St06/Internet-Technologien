@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+        /* don’t add padding to width and height */
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 1em;
+}

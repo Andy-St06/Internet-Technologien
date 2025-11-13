@@ -1,0 +1,29 @@
+/* flex container */
+.flex {
+    /* layout: */
+    background-color: #999;
+    margin-bottom: 2rem;
+    
+    /* flexbox: */
+    display: flex;
+    justify-content: space-between;
+}
+
+/* flex items in flex container: */
+.flex article {
+    /* layout: */
+    background-color: #ccc;
+    padding: 1rem;
+    border: 1px solid #aaa;
+    
+    /* flex items: */
+    flex-basis: 32%;
+}
+
+.multiple_rows {
+    flex-wrap: wrap;
+}
+
+.multiple_rows article {
+    margin-bottom: 2rem;
+}

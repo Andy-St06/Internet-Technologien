@@ -1,0 +1,27 @@
+html {
+    font-size: 100%;
+}
+
+body {
+    color: #000;
+    font-size: 1em;
+    font-family: system-ui, Helvetica, Arial, sans-serif;
+    line-height: 1.4;
+    background-color: #fff;
+    margin: 1em;
+}
+
+sup, sub {
+    font-size: .7em;
+    line-height: 0;
+    vertical-align: baseline; /* reset default offset */
+    position: relative;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    top: .3em;
+}

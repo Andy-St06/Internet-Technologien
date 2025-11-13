@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    padding: 0;
+}
+
+body {
+    color: #333;
+    font-size: 1em;
+    font-family: sans-serif;
+    line-height: 1.5;
+    max-width: 1200px;
+    min-width: 800px;
+    margin: 0 auto;
+    padding: 1em;
+    background: #fff;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display: block;
+}
+
+p:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #495057;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+strong, b {
+    font-weight: bold;
+}
+
+em, i {
+    font-style: italic;
+}
+
+img {
+    border-style: none;
+}
+
+a {
+    outline: none;
+}

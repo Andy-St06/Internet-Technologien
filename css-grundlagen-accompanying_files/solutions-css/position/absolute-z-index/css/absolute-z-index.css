@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+#logo {
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover; /* prevent distortion of image */
+    border-radius: 50%; /* circle shape */
+    
+    position: absolute;
+        /* is normally placed behind the header,
+           because it comes first in the HTML code */
+    top: 1rem;
+    left: 1rem;
+    z-index: 2; /* put in front */
+}
+
+header {
+    background-color: rgba(0, 0, 0, .7);
+    width: 100%; /* full width */
+    height: 6rem;
+    
+    position: absolute;
+        /* is normally placed in front of the header,
+           because it comes last in the HTML code */
+    top: 0;
+    left: 0;
+    z-index: 1; /* send to back */
+}

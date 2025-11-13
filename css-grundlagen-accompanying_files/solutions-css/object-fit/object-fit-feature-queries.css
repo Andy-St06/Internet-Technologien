@@ -1,0 +1,22 @@
+figure {
+    margin: 0 0 1rem 0;
+    width: 20rem;
+    height: 20rem;
+    overflow: hidden;
+    
+    /* for visualisation only: */
+    background-color: #666;
+    border: 3px solid #c00;
+}
+
+.fit {
+    width: 100%;
+}
+
+@supports (object-fit: cover) {
+    .fit {
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
+    }
+}

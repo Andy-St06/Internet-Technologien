@@ -1,0 +1,181 @@
+/* basics: */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    color: #333;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    line-height: 1.6em;
+    background-color: #ded7d4;
+    width: 80%;
+    margin: 1.5rem auto;
+}
+
+/* display HTML5 elements as block level elements: */
+header, main, nav, aside, article, footer, figure, figcaption {
+    display: block;
+    padding: 0;
+}
+
+h1 {
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+
+strong, b {
+    font-weight: bold;
+}
+
+em, i {
+    font-style: italic;
+}
+
+a {
+    color: #e53;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    margin-bottom: 1rem;
+    text-align: justify;
+    
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+
+ul {
+    margin-bottom: 1rem;
+}
+
+/* banner: */
+
+#banner {
+    color: #fff;
+    height: 0;
+    box-sizing: content-box;
+    padding: 0 0 66% 0; /* aspect ratio 66% of the width of banner.jpg */
+    margin-bottom: 3rem;
+    background: url(../images/banner.jpg) no-repeat;
+    background-size: cover;
+}
+
+#banner div {
+    padding: 5.5vw 4vw;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+#banner h1 {
+    font-size: 7vw;
+    margin-bottom: .6em;
+}
+
+#banner p {
+    font-size: 4vw;
+    margin-bottom: 1.5em;
+}
+
+#banner a {
+    color: inherit;
+    font-size: 3vw;
+    text-decoration: none;
+    padding: .5em 2em;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 3px solid #fff;
+    border-radius: 1.5em;
+    transition: background-color .2s ease-out;
+}
+
+#banner a:hover {
+    background-color: rgba(238, 85, 51, 0.8);
+}
+
+/* content: */
+
+aside,
+article {
+    background-color: #fff;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+aside {
+    width: 24%;
+    float: right;
+}
+
+main {
+    width: 74%;
+    float: left;
+}
+
+figure img {
+    width: 100%;
+}
+
+article figure {
+    width: 30%;
+}
+
+article figcaption {
+    font-weight: bold;
+    text-align: center;
+}
+
+.product_image_left {
+    float: left;
+    margin-right: 1.5em;
+}
+
+.product_image_right {
+    float: right;
+    margin-left: 1.5em;
+}
+
+a.button_link {
+    color: #333;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    width: 10em;
+    border: 2px solid #333;
+    padding: .5em 1em;
+    border-radius: 6px;
+    
+    transition: all .3s ease-out;
+    
+    clear: both;
+}
+
+a.button_link:hover {
+    color: #fff;
+    border-color: #e53;
+    background-color: #e53;
+}
+
+.options {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+/* footer: */
+
+footer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    clear: both;
+}

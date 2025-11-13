@@ -1,0 +1,40 @@
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+    max-width: 700px;
+    height: 20rem;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #dee2e6;
+    border-radius: 5px;
+}
+
+.flex-item {
+    flex: 0 0 15%;
+}
+
+.flex-item:nth-child(1) {
+    height: 40%;
+    filter: hue-rotate(100deg);
+}
+
+.flex-item:nth-child(2) {
+    height: 50%;
+    filter: hue-rotate(270deg);
+}
+
+.flex-item:nth-child(3) {
+    height: 60%;
+    filter: hue-rotate(200deg) brightness(125%);
+}
+
+.flex-item:nth-child(4) {
+    height: 20%;
+}
+
+.flex-item:nth-child(5) {
+    height: 30%;
+    filter: hue-rotate(150deg);
+}

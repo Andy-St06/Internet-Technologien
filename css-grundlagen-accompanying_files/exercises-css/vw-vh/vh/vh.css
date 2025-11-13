@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #333;
+    font-family: sans-serif;
+    font-size: 1em;
+    background: linear-gradient(to bottom, #666, #111) fixed;
+}
+
+header,
+main,
+footer {
+    padding: 2rem;
+    flex-grow: 1;
+}
+
+header,
+footer {
+    color: #fff;
+    background: linear-gradient(to bottom, #4b96fd, #0279fd); /* to be able to distinguish the elements from each other */
+}
+
+main details > * {
+    margin-bottom: 1rem; /* styling of the dummy texts */
+}
+
+summary {
+    -webkit-user-select: none;
+    user-select: none; /* text cannot be selected (accidentally) */
+    cursor: pointer;
+}
+
+.container {
+    background-color: #fff;
+    margin: 0 auto;
+    max-width: 1024px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}

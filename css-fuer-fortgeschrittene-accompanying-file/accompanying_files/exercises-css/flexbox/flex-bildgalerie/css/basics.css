@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    color: #333;
+    font-family: sans-serif;
+    font-size: 1em;
+    line-height: 1.4;
+    background-color: #fff;
+}
+
+h1 {
+    text-align: center;
+    margin: 1rem 0;
+}

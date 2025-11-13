@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%
+}
+
+body {
+    color: #333;
+    font-size: 1em;
+    font-family: sans-serif;
+    margin: 1rem;
+    background-color: #fff;
+}
+
+h1, h2 {
+    margin: 0 0 1rem 0;
+}
+
+* + h1,
+* + h2 {
+    margin-top: 2rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.visible {
+    color: #4390e1;
+    text-align: center;
+    background-color: #a2cbfa;
+    border: 1px solid #4390e1;
+    border-radius: 3px;
+    box-shadow: 0 8px 12px rgba(0, 90, 250, .15);
+}
+
+.flex-container {
+    margin-bottom: 2rem;
+}

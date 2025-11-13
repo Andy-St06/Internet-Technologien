@@ -1,0 +1,178 @@
+/* basics: */
+
+*,
+*::before,
+*::after {
+    margin: 0; /* remove default margins everywhere */
+    box-sizing: border-box; /* do not add padding & border to width & height */
+}
+
+html {
+    font-size: 100%;
+    padding: 0;
+}
+
+body {
+    color: #666;
+    font-family: sans-serif;
+    font-size: 1em;
+    line-height: 1.5;
+    padding: 0;
+    background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+    /* headings usually have less line spacing
+       than the body text */
+}
+
+a {
+    color: #095fd1;
+}
+
+/* form elememts: */
+
+/* The selector 'input' would be too general here,
+   as ALL input elements would be affected,
+   e.g. also checkbox and radio! */
+[type="text"],
+[type="email"],
+textarea {
+    font-family: inherit; /* adopt standard font from the body */
+    font-size: 1rem;
+    padding: .5em;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button {
+    color: #fff;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: #095fd1;
+    border: 1px solid #004bb8;
+    display: inline-block;
+    padding: .5em 1em;
+    border-radius: 5px;
+}
+
+/* style the entire form as a box: */
+form {
+    max-width: 25rem; /* a matter of taste */
+    padding: 0;
+    margin: 4rem auto 1rem auto; /* space for the icon above the box */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff; /* in case the body has a different background color */
+}
+
+/* the box shall have 3 sections: */
+.form-header,
+.form-body,
+.form-footer {
+    padding: 1rem;
+}
+
+.form-header,
+.form-footer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.form-header {
+    color: #095fd1;
+    border-bottom: 1px solid #ccc;
+    padding-top: 4rem; /* space for the icon within the box */
+    position: relative; /* prerequisite for position: absolute of the icon */
+}
+
+/* this way it does not matter which heading is used in the form-header: */
+.form-header h1,
+.form-header h2,
+.form-header h3,
+.form-header h4,
+.form-header h5,
+.form-header h6 {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.form-footer {
+    border-top: 1px solid #ccc;
+}
+
+ul.form-body {
+    list-style: none;
+}
+
+/* all list items directly inside form-body,
+   except the last one: */
+.form-body > li:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+/* icon style:
+consider all Font Awesome styles,
+in case the icon is changed: */
+.form-header > .fa-solid,
+.form-header > .fa-regular,
+.form-header > .fa-brands {
+    /* color: #095fd1;
+    text-align: center;
+    
+    not necessary here, because .form-header
+    has already the same properties */
+    
+    /* font-size: 3rem; alternative to the class fa-3x in HTML */
+    
+    box-sizing: content-box; /* add padding & border to width & height */
+    padding: 1rem;
+    width: 3rem;
+    height: 3rem;
+    border: .5rem double #ccc;
+    /* total width (and height):
+       3rem
+     + 1rem padding-left
+     + 1rem padding-right
+     + 0.5rem border-left
+     + 0.5rem border-right
+     = 6rem
+     * 16px = 96px */
+    
+    border-radius: 50%; /* circle */
+    background-color: #fff;
+    position: absolute;
+    top: -2.5rem;
+    
+    /* center: */
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+/* list-items that contain a form field
+   and an associated icon: */
+
+.form-field-icon {
+    position: relative; /* prerequisite for position: absolute of the icon */
+}
+
+/* space for the icon within the text fields: */
+.form-field-icon [type="text"],
+.form-field-icon [type="email"],
+.form-field-icon textarea {
+    padding-left: 2em;
+}
+
+/* positioning the icons: */
+.form-field-icon .fa-solid,
+.form-field-icon .fa-regular,
+.form-field-icon .fa-brands {
+    color: #999;
+    position: absolute;
+    top: .6em;
+    left: .5em;
+}

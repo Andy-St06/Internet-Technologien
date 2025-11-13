@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 6rem;
+    /* ensures in this exercise that all elements are in the visible area */
+}
+
+#outer, #inner {
+    border: 2px solid rgba(0, 0, 0, .4);
+    padding: 0;
+}
+
+#outer {
+    background-color: #fd0;
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+#inner {
+    background-color: #d00;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: -50px;
+    right: -50px;
+}

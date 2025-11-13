@@ -1,0 +1,15 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    color: #000;
+}
+
+a {
+    color: #000;
+}
+
+.external_link::after {
+    content: " " url(external_link.gif);
+    /* First, a space " " is inserted,
+       then the graphic. */
+}

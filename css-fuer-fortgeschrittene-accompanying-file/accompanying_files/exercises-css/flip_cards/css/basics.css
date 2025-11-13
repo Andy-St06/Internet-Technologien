@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    padding: 0;
+}
+
+body {
+    color: #333;
+    font-size: 1em;
+    font-family: sans-serif;
+    line-height: 1.5;
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0;
+    background: #fff;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display: block;
+}
+
+strong, b {
+    font-weight: bold;
+}
+
+em, i {
+    font-style: italic;
+}
+
+img {
+    border-style: none;
+}
+
+a {
+    outline: none;
+}
