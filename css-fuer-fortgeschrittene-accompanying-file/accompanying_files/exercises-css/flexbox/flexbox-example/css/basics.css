@@ -40,3 +40,16 @@ p {
     -ms-hyphens: auto;
     hyphens: auto;
 }
+
+.flex {
+    justify-content: space-between;
+    display: flex;
+}
+
+.flex article {
+    flex-basis: 32%;
+}
+
+.multiple_rows {
+    flex-wrap: wrap;
+}
