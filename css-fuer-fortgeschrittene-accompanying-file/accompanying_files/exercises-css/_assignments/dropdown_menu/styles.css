@@ -65,7 +65,7 @@ nav > ul > li > a {
   display: flex;
   justify-content: center;
   white-space: nowrap;
-  margin: 1rem;
+  padding: 1rem;
 }
 
 nav > ul > li:hover {
@@ -84,7 +84,7 @@ ul ul a {
   color: white;
   text-decoration: none;
   white-space: nowrap;
-  padding-left: 0.5rem;
+  padding: 0.5rem;
   line-height: 2rem;
 }
 
@@ -100,4 +100,9 @@ nav > ul > li:hover ul {
 nav > ul > li > ul > li {
   list-style: none;
   border-bottom: white 1px solid;
+}
+
+
+nav > ul > li > ul > li:last-child {
+  border-bottom: none;
 }
