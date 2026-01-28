@@ -1,0 +1,30 @@
+.content,
+.sidebar {
+    margin-bottom: 1rem;
+}
+
+.content {
+    @include box;
+}
+
+.sidebar {
+    @include box(mix(#fff, $highlight-color, 80%));
+}
+
+@media (min-width: $breakpoint-large) {
+    body {
+        width: 90%;
+        margin: 1em auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .sidebar {
+        width: $sidebar-width;
+    }
+    
+    .content {
+        $content-gap: 2%;
+        width: (100% - $sidebar-width - $content-gap);
+    }
+}

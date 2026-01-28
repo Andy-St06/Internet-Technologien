@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:first-child {
+    margin-top: 0;
+}
+
+:last-child {
+    margin-bottom: 0;
+}
+
+html {
+    font-size: 100%;
+    padding: 0;
+}
+
+body {
+    color: $body-color;
+    font-family: $base-fonts;
+    
+    font-size: 1em;
+    line-height: 1.6;
+    margin: 1em;
+    padding: 0;
+    max-width: $body-max-width;
+}
+
+h1, h2, h3, h4 {
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+a {
+    color: $highlight-color;
+    text-decoration: none;
+    
+    &:hover {
+        text-decoration: underline;
+    }
+}

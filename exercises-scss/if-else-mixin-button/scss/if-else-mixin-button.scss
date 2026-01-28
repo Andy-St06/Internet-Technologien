@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 1rem;
+}
+
+.button {
+    //button layout:
+    font-family: inherit;
+    font-size: inherit;
+    display: inline-block;
+    padding: .35rem .75rem;
+    border: 1px solid rgba(#000, .2);
+    border-radius: 5px;
+}
