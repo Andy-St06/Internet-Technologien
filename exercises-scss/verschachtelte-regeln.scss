@@ -1,35 +1,28 @@
 header {
-    display: block;
-}
-
-header .navbar {
+  display: block;
+  .navbar {
     border-bottom: 1px solid #dee2e6;
     background-color: #007bff;
-}
-
-header .navbar a {
-    text-decoration: none;
-}
-
-header .navbar .navbar-logo {
-    max-width: 25%;
-}
-
-header .navbar .navbar-logo > a {
-    color: inherit;
-    display: block;
-}
-
-header .navbar .navbar-logo .navbar-logo-text {
-    font-family: OpenSansCondensed;
-    font-size: 1.3rem;
-    white-space: nowrap;
-}
-
-header .navbar .nav-link {
-    color: #fff;
-}
-
-header .navbar .nav-link::after {
-    content: "\25be";
+    a {
+      text-decoration: none;
+    }
+    .navbar-logo {
+      max-width: 25%;
+      > a {
+        color: inherit;
+        display: block;
+      }
+      .navbar-logo-text {
+        font-family: OpenSansCondensed;
+        font-size: 1.3rem;
+        white-space: nowrap;
+      }
+    }
+    .nav-link {
+      color: #fff;
+      &::after {
+        content: "\25be";
+      }
+    }
+  }
 }
