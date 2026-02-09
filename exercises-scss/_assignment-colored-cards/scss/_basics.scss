@@ -1,0 +1,11 @@
+@use "vaiables";
+
+* {
+    margin: 10;
+    box-sizing: border-box;
+}
+    
+main {
+    max-width: $max-breite;
+    //TODO horizontal zentrieren
+}
