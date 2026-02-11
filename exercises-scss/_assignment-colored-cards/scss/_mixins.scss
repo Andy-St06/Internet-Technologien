@@ -1,0 +1,11 @@
+@mixin color-variations($bgcolor) {
+    background-color: $bgcolor;
+    
+    $brightness: percentage((red($bgcolor) + green($bgcolor) + blue($bgcolor)) / (255 * 3));
+    
+    @if $brightness > 60 {
+        color: black;
+    } @else {
+        color: white;
+    }
+}
