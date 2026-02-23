@@ -1,11 +1,47 @@
 @mixin color-variations($bgcolor) {
-    background-color: $bgcolor;
-    
-    $brightness: percentage((red($bgcolor) + green($bgcolor) + blue($bgcolor)) / (255 * 3));
-    
-    @if $brightness > 60 {
-        color: black;
-    } @else {
-        color: white;
+  background-color: $bgcolor;
+
+  $brightness: percentage(
+    (red($bgcolor) + green($bgcolor) + blue($bgcolor)) / (255 * 3)
+  );
+
+  @if $brightness > 60 {
+    color: black;
+  } @else {
+    color: white;
+  }
+}
+
+@mixin background-cards() {
+  $primary-color: #0d6efd;
+  $secondary-color: #d63384;
+  $third-color: #ffd805;
+  $fourt-color: #fd7e14;
+  $fift-color: #198754;
+  $sixed-color: #dc3545;
+
+  $colors: (
+    1: $primary-color,
+    2: $secondary-color,
+    3: $third-color,
+    4: $fourt-color,
+    5: $fift-color,
+    6: $sixed-color,
+  );
+
+  @each $color, $value in $colors {
+    $colors-count: length($colors);
+    .colored-cards .card:nth-child(#{$colors-count} n + #{$color}) {
+      background-color: transparentize($value, 0.8);
+      border: 1px solid $value;
+      a {
+          color: #{$value};
+          text-decoration: none;
+        }
     }
+  }
+}
+
+@mixin button(){
+    
 }

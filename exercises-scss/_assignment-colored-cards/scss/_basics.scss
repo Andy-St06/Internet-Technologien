@@ -1,21 +1,16 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  font-family: $schrift;
+  font-family: #{schrift};
 }
 
 main {
-  max-width: $max-breite;
+  max-width: #{max-breite};
   margin: 0 auto;
-}
-
-.card {
-  border: 1px solid lightgray;
-  padding: 1rem;
-  margin: 1rem 1rem 5rem 1rem;
-  a {
-    color: $color;
-    text-decoration: none;
+  @include background-cards();
+  .card {
+    padding: 1rem;
+    margin: 1rem 1rem 5rem 1rem;
   }
 }
 
@@ -46,11 +41,11 @@ img {
 }
 
 a.button {
-  margin:  1rem  1rem 1rem 5rem;
+  margin: 1rem 1rem 1rem 5rem;
   display: inline-block;
   padding: 7px 15px;
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s;
-  @include color-variations($color);
+  @include color-variations($acolor);
 }
