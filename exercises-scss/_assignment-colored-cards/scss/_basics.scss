@@ -15,7 +15,7 @@ body {
 }
 
 main {
-  max-width: #{max-breite};
+  max-width: #{$max-breite};
   margin: 0 auto;
   @include background-cards;
   .card {
