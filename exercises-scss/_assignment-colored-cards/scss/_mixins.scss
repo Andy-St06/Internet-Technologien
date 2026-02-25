@@ -1,10 +1,8 @@
 @mixin color-variations($bgcolor) {
   background-color: $bgcolor;
-
   $brightness: percentage(
     (red($bgcolor) + green($bgcolor) + blue($bgcolor)) / (255 * 3)
   );
-
   @if $brightness > 60 {
     color: black;
   } @else {
@@ -13,40 +11,44 @@
 }
 
 @mixin background-cards() {
-  $primary-color: #0d6efd;
-  $secondary-color: #d63384;
-  $third-color: #ffd805;
-  $fourt-color: #fd7e14;
-  $fift-color: #198754;
-  $sixed-color: #dc3545;
-
-  $colors: (
-    1: $primary-color,
-    2: $secondary-color,
-    3: $third-color,
-    4: $fourt-color,
-    5: $fift-color,
-    6: $sixed-color,
-  );
-
-  @each $color, $value in $colors {
-    $colors-count: length($colors);
-    .colored-cards .card:nth-child(#{$colors-count} n + #{$color}) {
+  @each $color, $value in $card-colors {
+    $i: index($card-colors, ($color $value));
+    $colors-count: length($card-colors);
+    .colored-cards .card:nth-child(#{$colors-count}n + #{$i}) {
       background-color: transparentize($value, 0.8);
       border: 1px solid $value;
+      display: flex;
+      flex-direction: column;
       a {
-        color: #{$value};
+        color: darken($value, 15%);
         text-decoration: none;
         &.button {
           @include button($value);
         }
+      }
+      h3 {
+        color: darken($value, 15%);
+        text-align: center;
+      }
+      img {
+        display: block;
+        margin: -5em auto 0 auto;
+        width: $size;
+        height: $size;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 4px solid white;
+        outline: 2px solid $value;
+        outline-offset: 0px;
       }
     }
   }
 }
 
 @mixin button($value) {
-  margin: 1rem 1rem 1rem 5rem;
+  margin-bottom: 1rem;
+  margin-top: auto;
+  align-self: center;
   display: inline-block;
   padding: 7px 15px;
   text-decoration: none;
