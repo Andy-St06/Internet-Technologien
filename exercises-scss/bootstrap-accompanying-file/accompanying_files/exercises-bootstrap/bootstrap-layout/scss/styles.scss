@@ -1,0 +1,42 @@
+@font-face {
+    font-family: Garamond;
+    src: url("../fonts/eb-garamond/eb-garamond-regular.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Garamond;
+    src: url("../fonts/eb-garamond/eb-garamond-italic.woff") format("woff");
+    font-style: italic;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Garamond;
+    src: url("../fonts/eb-garamond/eb-garamond-bold.woff") format("woff");
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Garamond;
+    src: url("../fonts/eb-garamond/eb-garamond-bold-italic.woff") format("woff");
+    font-style: italic;
+    font-weight: bold;
+}
+
+//Optimize text rendering in Firefox & Webkit browsers:
+body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    max-width: 100%;
+    
+    //images within figures:
+    figure & {
+        display: block;
+    }
+}

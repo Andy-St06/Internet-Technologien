@@ -1,0 +1,126 @@
+//Variable overrides must come BEFORE the Bootstrap import!
+
+$prefix: bs-;
+
+$primary: #17a2b8;
+$body-color: #6c757d;
+
+$headings-font-style: italic;
+$our-font-family-serif: Garamond, Georgia, Times, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+//$headings-font-family: $our-font-family-serif;
+$headings-font-family: var(--#{$prefix}font-serif);
+
+$enable-shadows: true;
+
+@import "bootstrap/bootstrap";
+
+@font-face {
+    font-family: Garamond;
+    src: url("../fonts/eb-garamond/eb-garamond-regular.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Garamond;
+    src: url("../fonts/eb-garamond/eb-garamond-italic.woff") format("woff");
+    font-style: italic;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Garamond;
+    src: url("../fonts/eb-garamond/eb-garamond-bold.woff") format("woff");
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Garamond;
+    src: url("../fonts/eb-garamond/eb-garamond-bold-italic.woff") format("woff");
+    font-style: italic;
+    font-weight: bold;
+}
+
+:root {
+    --#{$prefix}font-serif: #{inspect($our-font-family-serif)};
+}
+
+//Optimize text rendering in Firefox & Webkit browsers:
+body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    display: block;
+    margin: $spacer 0;
+    position: relative;
+    
+    img {
+        display: block;
+    }
+    
+    figcaption {
+        color: #fff;
+        text-align: center;
+        background-color: rgba($gray-900, .4);
+        padding: ($spacer / 2);
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    
+    @media (hover: hover) {
+        figcaption {
+            opacity: 0;
+            transition: opacity .3s ease-out;
+        }
+        
+        &:hover {
+            figcaption {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.btn-link {
+    padding: 0; //Bugfix
+}
+
+.our-banner {
+    background: url(../images/wilderness.jpg) no-repeat;
+    background-size: cover;
+}
+
+.our-remove-all-text-decorations {
+    a {
+        text-decoration: none;
+    }
+}
+
+$our-widths: (
+    25: 25%,
+    50: 50%,
+    75: 75%,
+    100: 100%,
+    auto: auto
+);
+
+@each $breakpoint, $breakpoint-value in $grid-breakpoints {
+    @if $breakpoint-value > 0 {
+        @media (min-width: $breakpoint-value) {
+            @each $width, $width-value in $our-widths {
+                .w-#{$breakpoint}-#{$width} {
+                    width: $width-value;
+                }
+            }
+        }
+    }
+}
