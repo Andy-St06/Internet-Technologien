@@ -1,0 +1,151 @@
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/opensans-regular.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/opensans-italic.woff) format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/opensans-bold.woff) format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/opensans-bolditalic.woff) format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:first-child {
+  margin-top: 0;
+}
+
+:last-child {
+  margin-bottom: 0;
+}
+
+html {
+  font-size: 100%;
+  padding: 0;
+}
+
+body {
+  color: #343a40;
+  font-family: OpenSans, Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.6;
+  margin: 1em;
+  padding: 0;
+  max-width: 1400px;
+}
+
+h1, h2, h3, h4 {
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+input[type=search] {
+  color: #343a40;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 1;
+  padding: 0.25em 0.35em;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.2s ease-out;
+}
+input[type=search]:focus {
+  background-color: rgb(242.25, 248.4, 255);
+  border-color: #007bff;
+}
+
+.content,
+.sidebar {
+  margin-bottom: 1rem;
+}
+
+.content {
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.sidebar {
+  padding: 1rem;
+  background-color: rgb(204, 228.6, 255);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+@media (min-width: 1024px) {
+  body {
+    width: 90%;
+    margin: 1em auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .sidebar {
+    width: 25%;
+  }
+  .content {
+    width: 73%;
+  }
+}
+.content > h1 {
+  font-family: Georgia, Times, serif;
+  font-weight: normal;
+  font-style: italic;
+}
+.content p {
+  hyphens: auto;
+}
+
+.sidebar h1 {
+  font-size: 1.1rem;
+}
+.sidebar input[type=search] {
+  margin-bottom: 1rem;
+}/*# sourceMappingURL=styles.css.map */

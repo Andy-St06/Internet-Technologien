@@ -1,0 +1,287 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.grid-container {
+  padding-top: 5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: schrift;
+  line-height: 1.6rem;
+  padding: 40px 0;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+main h1 {
+  margin-bottom: 2rem;
+}
+main .colored-cards .card:nth-child(6n+1) {
+  background-color: rgba(13, 110, 253, 0.2);
+  border: 1px solid #0d6efd;
+  display: flex;
+  flex-direction: column;
+}
+main .colored-cards .card:nth-child(6n+1) a {
+  color: rgb(1.5532786885, 76.887295082, 187.9467213115);
+  text-decoration: none;
+}
+main .colored-cards .card:nth-child(6n+1) a.button {
+  margin-bottom: 1rem;
+  margin-top: auto;
+  align-self: center;
+  display: inline-block;
+  padding: 7px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  background-color: #0d6efd;
+  color: white;
+}
+main .colored-cards .card:nth-child(6n+1) h3 {
+  color: rgb(1.5532786885, 76.887295082, 187.9467213115);
+  text-align: center;
+}
+main .colored-cards .card:nth-child(6n+1) img {
+  display: block;
+  margin: -5em auto 0 auto;
+  width: 7rem;
+  height: 7rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #0d6efd;
+  outline: 3px solid white;
+  outline-offset: -4px;
+}
+main .colored-cards .card:nth-child(6n+2) {
+  background-color: rgba(214, 51, 132, 0.2);
+  border: 1px solid #d63384;
+  display: flex;
+  flex-direction: column;
+}
+main .colored-cards .card:nth-child(6n+2) a {
+  color: rgb(156.9551020408, 31.5448979592, 93.8653061224);
+  text-decoration: none;
+}
+main .colored-cards .card:nth-child(6n+2) a.button {
+  margin-bottom: 1rem;
+  margin-top: auto;
+  align-self: center;
+  display: inline-block;
+  padding: 7px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  background-color: #d63384;
+  color: white;
+}
+main .colored-cards .card:nth-child(6n+2) h3 {
+  color: rgb(156.9551020408, 31.5448979592, 93.8653061224);
+  text-align: center;
+}
+main .colored-cards .card:nth-child(6n+2) img {
+  display: block;
+  margin: -5em auto 0 auto;
+  width: 7rem;
+  height: 7rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #d63384;
+  outline: 3px solid white;
+  outline-offset: -4px;
+}
+main .colored-cards .card:nth-child(6n+3) {
+  background-color: rgba(255, 216, 5, 0.2);
+  border: 1px solid #ffd805;
+  display: flex;
+  flex-direction: column;
+}
+main .colored-cards .card:nth-child(6n+3) a {
+  color: rgb(183.5, 154.874, 0);
+  text-decoration: none;
+}
+main .colored-cards .card:nth-child(6n+3) a.button {
+  margin-bottom: 1rem;
+  margin-top: auto;
+  align-self: center;
+  display: inline-block;
+  padding: 7px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  background-color: #ffd805;
+  color: black;
+}
+main .colored-cards .card:nth-child(6n+3) h3 {
+  color: rgb(183.5, 154.874, 0);
+  text-align: center;
+}
+main .colored-cards .card:nth-child(6n+3) img {
+  display: block;
+  margin: -5em auto 0 auto;
+  width: 7rem;
+  height: 7rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #ffd805;
+  outline: 3px solid white;
+  outline-offset: -4px;
+}
+main .colored-cards .card:nth-child(6n+4) {
+  background-color: rgba(253, 126, 20, 0.2);
+  border: 1px solid #fd7e14;
+  display: flex;
+  flex-direction: column;
+}
+main .colored-cards .card:nth-child(6n+4) a {
+  color: rgb(194.8417721519, 89.5443037975, 1.6582278481);
+  text-decoration: none;
+}
+main .colored-cards .card:nth-child(6n+4) a.button {
+  margin-bottom: 1rem;
+  margin-top: auto;
+  align-self: center;
+  display: inline-block;
+  padding: 7px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  background-color: #fd7e14;
+  color: white;
+}
+main .colored-cards .card:nth-child(6n+4) h3 {
+  color: rgb(194.8417721519, 89.5443037975, 1.6582278481);
+  text-align: center;
+}
+main .colored-cards .card:nth-child(6n+4) img {
+  display: block;
+  margin: -5em auto 0 auto;
+  width: 7rem;
+  height: 7rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #fd7e14;
+  outline: 3px solid white;
+  outline-offset: -4px;
+}
+main .colored-cards .card:nth-child(6n+5) {
+  background-color: rgba(25, 135, 84, 0.2);
+  border: 1px solid #198754;
+  display: flex;
+  flex-direction: column;
+}
+main .colored-cards .card:nth-child(6n+5) a {
+  color: rgb(13.046875, 70.453125, 43.8375);
+  text-decoration: none;
+}
+main .colored-cards .card:nth-child(6n+5) a.button {
+  margin-bottom: 1rem;
+  margin-top: auto;
+  align-self: center;
+  display: inline-block;
+  padding: 7px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  background-color: #198754;
+  color: white;
+}
+main .colored-cards .card:nth-child(6n+5) h3 {
+  color: rgb(13.046875, 70.453125, 43.8375);
+  text-align: center;
+}
+main .colored-cards .card:nth-child(6n+5) img {
+  display: block;
+  margin: -5em auto 0 auto;
+  width: 7rem;
+  height: 7rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #198754;
+  outline: 3px solid white;
+  outline-offset: -4px;
+}
+main .colored-cards .card:nth-child(6n+6) {
+  background-color: rgba(220, 53, 69, 0.2);
+  border: 1px solid #dc3545;
+  display: flex;
+  flex-direction: column;
+}
+main .colored-cards .card:nth-child(6n+6) a {
+  color: rgb(167.4810126582, 29.0189873418, 42.2848101266);
+  text-decoration: none;
+}
+main .colored-cards .card:nth-child(6n+6) a.button {
+  margin-bottom: 1rem;
+  margin-top: auto;
+  align-self: center;
+  display: inline-block;
+  padding: 7px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  background-color: #dc3545;
+  color: white;
+}
+main .colored-cards .card:nth-child(6n+6) h3 {
+  color: rgb(167.4810126582, 29.0189873418, 42.2848101266);
+  text-align: center;
+}
+main .colored-cards .card:nth-child(6n+6) img {
+  display: block;
+  margin: -5em auto 0 auto;
+  width: 7rem;
+  height: 7rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #dc3545;
+  outline: 3px solid white;
+  outline-offset: -4px;
+}
+main .card {
+  padding: 1rem;
+  margin: 1rem 1rem 5rem 1rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.grid-container {
+  padding-top: 5rem;
+}/*# sourceMappingURL=styles.css.map */

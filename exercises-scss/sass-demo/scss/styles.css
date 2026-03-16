@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+:first-child {
+  margin-top: 0;
+}
+
+:last-child {
+  margin-bottom: 0;
+}
+
+html {
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #343a40;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.6;
+  margin: 1em;
+  padding: 0;
+  max-width: 1500px;
+}
+
+a {
+  color: #fd7e14;
+  text-decoration: none;
+}
+
+#content,
+#sidebar {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid #343a40;
+  border-radius: 5px;
+}/*# sourceMappingURL=styles.css.map */
