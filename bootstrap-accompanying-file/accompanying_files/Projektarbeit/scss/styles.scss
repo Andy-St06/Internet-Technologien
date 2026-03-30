@@ -1,1 +1,31 @@
+$primary: #d40000;
+$body-bg: #fff;
+
 @import "bootstrap/bootstrap";
+
+.ma-card {
+  width: 100%;
+  max-width: 20rem;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.ma-modal-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+a[href="#"] {
+  cursor: not-allowed;
+}
+
+.navbar-brand img {
+  height: 50px;
+}
